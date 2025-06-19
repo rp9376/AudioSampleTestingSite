@@ -1,11 +1,11 @@
 [
   {
     "sample": "sample_01",
-    "selected": "a"
+    "selected": "b"
   },
   {
     "sample": "sample_02",
-    "selected": "a"
+    "selected": "b"
   },
   {
     "sample": "sample_03",
@@ -13,7 +13,7 @@
   },
   {
     "sample": "sample_04",
-    "selected": "a"
+    "selected": "b"
   },
   {
     "sample": "sample_05",
@@ -28,11 +28,135 @@
     "selected": "b"
   },
   {
+    "sample": "sample_08",
+    "selected": "b"
+  },
+  {
+    "sample": "sample_09",
+    "selected": "b"
+  },
+  {
+    "sample": "sample_10",
+    "selected": "b"
+  },
+  {
     "sample": "sample_01",
     "selected": "a"
   },
   {
     "sample": "sample_02",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_03",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_04",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_05",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_06",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_07",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_08",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_09",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_10",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_01",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_02",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_03",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_04",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_05",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_06",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_07",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_08",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_09",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_10",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_01",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_02",
+    "selected": "b"
+  },
+  {
+    "sample": "sample_03",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_04",
+    "selected": "b"
+  },
+  {
+    "sample": "sample_05",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_06",
+    "selected": "b"
+  },
+  {
+    "sample": "sample_07",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_08",
+    "selected": "b"
+  },
+  {
+    "sample": "sample_09",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_10",
     "selected": "b"
   }
 ]

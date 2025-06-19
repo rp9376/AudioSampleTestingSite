@@ -11,10 +11,9 @@ def main():
         all_results = json.load(f)
     # Count selections for each sample
     counts = {}
-    for user in all_results:
-        for entry in user:
-            key = f"{entry['sample']}_{entry['selected']}"
-            counts[key] = counts.get(key, 0) + 1
+    for entry in all_results:
+        key = f"{entry['sample']}_{entry['selected']}"
+        counts[key] = counts.get(key, 0) + 1
     # Prepare data for plotting
     samples = sorted(set(k.rsplit('_',1)[0] for k in counts))
     a_counts = [counts.get(f"{s}_a", 0) for s in samples]

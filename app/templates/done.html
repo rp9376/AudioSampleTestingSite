@@ -2,12 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Submit Results</title>
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #e0e7ef 0%, #f8fafc 100%);
+            text-align: center;
+            padding: 60px 20px;
+            color: #222;
+        }
+        .thankyou-container {
+            background: #fff;
+            border-radius: 22px;
+            box-shadow: 0 6px 32px rgba(79,140,255,0.10), 0 2px 8px rgba(0,0,0,0.06);
+            display: inline-block;
+            padding: 50px 60px 40px 60px;
+            margin-top: 60px;
+            min-width: 320px;
+            animation: popin 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        @keyframes popin {
+            0% { transform: scale(0.7); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        h1 {
+            color: #4f8cff;
+            font-size: 2.5em;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 1.3em;
+            color: #444;
+            margin-bottom: 18px;
+        }
+        .smile {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #6ed0ff;
+        }
+    </style>
 </head>
 <body>
-    <h1>Submit Your Results</h1>
-    <form method="post">
-        <button type="submit">Submit Results</button>
-    </form>
+    <div class="thankyou-container">
+        <div class="smile">😊</div>
+        <h1>Thank You!</h1>
+        <p>Thank you for participating in our audio comparison.<br>Your feedback is valuable!</p>
+    </div>
 </body>
 </html>

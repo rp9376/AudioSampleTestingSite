@@ -1,6 +1,8 @@
 import os
 import json
 from flask import Blueprint, render_template, request, redirect, url_for, send_from_directory
+import subprocess
+import sys
 
 main = Blueprint('main', __name__)
 
@@ -43,10 +45,14 @@ def submit():
 
 @main.route('/done')
 def done():
-    return "Thank you for participating!"
+    return render_template('thankyou.html')
 
 @main.route('/admin/results')
 def admin():
+    script_path = os.path.join(os.path.dirname(__file__), '..', 'admin', 'visualize_results.py')
+    python_exe = sys.executable
+    subprocess.run([python_exe, script_path], check=True)
+
     if not os.path.exists(RESULTS_FILE):
         return "No results yet."
 
