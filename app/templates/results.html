@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Results</title>
+  <title>Results</title>
 </head>
 <body>
-    <h1>Results Visualization</h1>
-    <p>Run the admin/visualize_results.py script to generate a chart from the results.</p>
-    <img src="/static/results.png" alt="Results Chart" style="max-width:600px;">
+  <h1>Voting Results</h1>
+  <table border="1" cellpadding="10">
+    <tr><th>Sample</th><th>A</th><th>B</th></tr>
+    {% for key, votes in tally.items() %}
+      <tr>
+        <td>{{ key }}</td>
+        <td>{{ votes['a'] }}</td>
+        <td>{{ votes['b'] }}</td>
+      </tr>
+    {% endfor %}
+  </table>
 </body>
 </html>

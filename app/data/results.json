@@ -1,0 +1,38 @@
+[
+  {
+    "sample": "sample_01",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_02",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_03",
+    "selected": "b"
+  },
+  {
+    "sample": "sample_04",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_05",
+    "selected": "b"
+  },
+  {
+    "sample": "sample_06",
+    "selected": "b"
+  },
+  {
+    "sample": "sample_07",
+    "selected": "b"
+  },
+  {
+    "sample": "sample_01",
+    "selected": "a"
+  },
+  {
+    "sample": "sample_02",
+    "selected": "b"
+  }
+]
