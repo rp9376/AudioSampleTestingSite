@@ -69,6 +69,13 @@ def admin():
 
     return render_template('results.html', tally=tally)
 
+@main.route('/admin/clear_results', methods=['POST'])
+def clear_results():
+    if os.path.exists(RESULTS_FILE):
+        with open(RESULTS_FILE, 'w') as f:
+            json.dump([], f)
+    return redirect(url_for('main.admin'))
+
 @main.route('/audio/<folder>/<filename>')
 def serve_audio(folder, filename):
     return send_from_directory(os.path.join(AUDIO_DIR, folder), filename)
