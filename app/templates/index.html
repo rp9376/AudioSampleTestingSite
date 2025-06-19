@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Sample Comparison</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Audio Sample Comparison</h1>
+    <p>Sample {{ idx+1 }} of {{ total }}</p>
+    <form method="post">
+        <div class="audio-row">
+            <div class="audio-sample">
+                <h2>Sample A</h2>
+                <audio controls>
+                    <source src="/audio/{{ sample }}/a.mp3" type="audio/mpeg">
+                </audio>
+                <button type="submit" name="selected" value="a">Choose A</button>
+            </div>
+            <div class="audio-sample">
+                <h2>Sample B</h2>
+                <audio controls>
+                    <source src="/audio/{{ sample }}/b.mp3" type="audio/mpeg">
+                </audio>
+                <button type="submit" name="selected" value="b">Choose B</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
