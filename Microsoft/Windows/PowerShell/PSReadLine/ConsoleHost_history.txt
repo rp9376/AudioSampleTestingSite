@@ -1,9 +1,0 @@
-uv
-uv --version
-git config --global user.email "rp9376@student.uni-lj.si"
-git config --get-all user.name
-git config --global user.email "rp9376@student.uni-lj.si"
-uv --version
-python3 --version
-python --version
-python3 --version
