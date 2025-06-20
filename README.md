@@ -1,7 +1,16 @@
 # AudioSampleTestingSite
 
-
 A modern Flask-based web app for comparing audio samples, collecting user preferences, and visualizing results.
+
+---
+
+## Preview
+
+Below are screenshots of the web application in action:
+
+| Voting Page | Results Page |
+|-------------|-------------|
+| ![Voting Page](images/img_vote.png) | ![Results Page](images/img_results.png) |
 
 ---
 
@@ -103,11 +112,6 @@ AudioSampleTestingSite/
 - **Live reload:** Flask runs in development mode for instant feedback.
 - **Results chart:** Always up-to-date; regenerated on every admin page load.
 - **Security:** Do not use this setup in production without further hardening.
-
----
-
-## License
-MIT License (or specify your own)
 
 ---
 

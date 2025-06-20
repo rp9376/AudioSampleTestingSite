@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Results</title>
+  <link rel="icon" type="image/png" href="/static/icons/Souund_Icon.png">
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -60,15 +61,14 @@
       cursor: pointer;
       box-shadow: 0 2px 8px rgba(255,79,79,0.10);
       transition: background 0.2s, box-shadow 0.2s;
-      margin-bottom: 30px;
+      margin: 40px auto 0 auto;
+      display: block;
+      max-width: 400px;
     }
   </style>
 </head>
 <body>
   <h1>Voting Results</h1>
-  <form method="POST" action="/admin/clear_results" style="margin-bottom: 30px;">
-    <button type="submit" class="clear-results-btn">Clear Results</button>
-  </form>
   <img src="/static/results.png" alt="Results Chart" class="results-img">
   <table class="results-table">
     <tr><th>Sample</th><th>A</th><th>B</th></tr>
@@ -80,5 +80,8 @@
       </tr>
     {% endfor %}
   </table>
+  <form method="POST" action="/admin/clear_results" style="margin: 40px auto 0 auto; max-width: 400px;">
+    <button type="submit" class="clear-results-btn">Clear Results</button>
+  </form>
 </body>
 </html>

@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Blueprint, render_template, request, redirect, url_for, send_from_directory
+from flask import Blueprint, render_template, request, redirect, url_for, send_from_directory, abort
 import subprocess
 import sys
 
@@ -11,6 +11,14 @@ RESULTS_FILE = os.path.join(os.path.dirname(__file__), 'data', 'results.json')
 
 # Load all sample folder names
 sample_dirs = sorted([d for d in os.listdir(AUDIO_DIR) if os.path.isdir(os.path.join(AUDIO_DIR, d))])
+
+def is_local_ip(ip):
+    # Accepts localhost and private network ranges
+    if ip.startswith('127.') or ip == '::1':
+        return True
+    if ip.startswith('192.168.') or ip.startswith('10.') or ip.startswith('172.'):
+        return True
+    return False
 
 @main.route('/')
 def index():
@@ -49,6 +57,8 @@ def done():
 
 @main.route('/admin/results')
 def admin():
+    if not is_local_ip(request.remote_addr):
+        abort(403)
     script_path = os.path.join(os.path.dirname(__file__), '..', 'admin', 'visualize_results.py')
     python_exe = sys.executable
     subprocess.run([python_exe, script_path], check=True)
@@ -71,6 +81,8 @@ def admin():
 
 @main.route('/admin/clear_results', methods=['POST'])
 def clear_results():
+    if not is_local_ip(request.remote_addr):
+        abort(403)
     if os.path.exists(RESULTS_FILE):
         with open(RESULTS_FILE, 'w') as f:
             json.dump([], f)
